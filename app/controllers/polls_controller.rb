@@ -1,5 +1,5 @@
 class PollsController < ApplicationController
-  def flow
+  def index
     @polls = Poll.all.order("created_at DESC")
   end
 
